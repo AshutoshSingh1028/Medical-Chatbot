@@ -29,17 +29,15 @@ Medical-Chatbot/
 
 1. **Clone the repository**
 	```sh
-	git clone <repo-url>
+	git clone https://github.com/AshutoshSingh1028/Medical-Chatbot.git
 	cd Medical-Chatbot
 	```
 
 2. **Create a virtual environment (recommended)**
 	```sh
-	python -m venv venv
-	.\venv\Scripts\activate  # On Windows
-	# Or
-	source venv/bin/activate  # On Mac/Linux
-	```
+    conda create -n medchatbot python=3.10
+    conda activate medchatbot
+    ```
 
 3. **Install dependencies**
 	```sh
@@ -56,11 +54,11 @@ Medical-Chatbot/
 	```sh
 	python app.py
 	```
-	The chatbot will be available at [http://localhost:5000](http://localhost:5000).
+	The chatbot will be available at [http://localhost:8080](http://localhost:8080).
 
 ## Usage
 
-1. Open your browser and go to [http://localhost:5000](http://localhost:5000).
+1. Open your browser and go to [http://localhost:8080](http://localhost:8080).
 2. Type your medical question in the chat interface.
 3. The chatbot will respond with information based on the medical knowledge base.
 
@@ -71,15 +69,7 @@ Medical-Chatbot/
 - To update the knowledge base, replace or add PDFs in the `data/` folder and re-run `store_index.py`.
 - Modify prompts or helper functions in `src/` as needed.
 
-## Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements.
-
 ## License
 
 This project is licensed under the MIT License.
 
-## Acknowledgements
-
-- Built with [Flask](https://flask.palletsprojects.com/)
-- Powered by modern language models
