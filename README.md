@@ -48,7 +48,11 @@ Medical-Chatbot/
 	- Place your medical reference PDF in the `data/` directory (default: `Medical_book.pdf`).
 
 5. **Set up environment variables**
-	- Copy `.env.example` to `.env` and fill in required API keys or settings.
+	- Create a `.env` file in the project root with the following content (replace with your own API keys):
+      ```
+      PINECONE_API_KEY="your-pinecone-api-key"
+      OPENAI_API_KEY="your-openai-api-key"
+      ```
 
 6. **Run the application**
 	```sh
